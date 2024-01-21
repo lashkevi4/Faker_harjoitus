@@ -10,9 +10,14 @@ class Program
             string firstName = Faker.Name.First();
             string lastName = Faker.Name.Last();
             string address = Faker.Address.StreetAddress();
+
             string personId = GeneratePersonId(lastName);
 
-            Console.WriteLine($"Имя: {firstName}, Фамилия: {lastName}, Адрес: {address}, Идентификационный номер: {personId}");
+            Console.WriteLine($"First Name: {firstName}");
+            Console.WriteLine($"Last Name: {lastName}");
+            Console.WriteLine($"Address: {address}");
+            Console.WriteLine($"ID number: {personId}");
+            System.Console.WriteLine("");
         }
 
     }
